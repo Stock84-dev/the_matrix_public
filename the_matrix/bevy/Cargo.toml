@@ -1,0 +1,70 @@
+[package]
+name = "bevy"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mouse = { path = "../mouse" }
+tokio = { version = "1.11.0", features = ["full"] }
+pin-project = "1.0.8"
+futures-lite = "1.12.0"
+# bevy 0.6
+bevy_app = "0.6.0"
+bevy_asset = "0.6.0"
+bevy_core = "0.6.0"
+bevy_derive = "0.6.0"
+bevy_diagnostic = "0.6.0"
+bevy_ecs = "0.6.0"
+#bevy_input = "0.6.0"
+bevy_log = "0.6.0"
+bevy_math = "0.6.0"
+bevy_reflect = "0.6.0"
+bevy_scene = "0.6.0"
+bevy_transform = "0.6.0"
+bevy_utils = "0.6.0"
+#bevy_window = "0.6.0"
+bevy_tasks = "0.6.0"
+# bevy (optional)
+#bevy_audio = "0.6.0"
+#bevy_gltf = "0.6.0"
+#bevy_pbr = "0.6.0"
+#bevy_render = "0.6.0"
+#bevy_dynamic_plugin = "0.6.0"
+#bevy_sprite = "0.6.0"
+#bevy_text = "0.6.0"
+#bevy_ui = "0.6.0"
+#bevy_wgpu = "0.6.0"
+#bevy_winit = "0.6.0"
+#bevy_gilrs = "0.6.0"
+
+# bevy 0.5
+#bevy_app = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", version = "0.5.0", features = ["bevy_reflect"] }
+#bevy_asset = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", version = "0.5.0" }
+#bevy_core = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", version = "0.5.0" }
+#bevy_derive = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", version = "0.5.0" }
+#bevy_diagnostic = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", version = "0.5.0" }
+#bevy_ecs = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", version = "0.5.0", features = ["bevy_reflect"] }
+##bevy_input = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", version = "0.5.0" }
+#bevy_log = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", version = "0.5.0" }
+#bevy_math = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", version = "0.5.0" }
+#bevy_reflect = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", version = "0.5.0", features = ["bevy"] }
+#bevy_scene = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", version = "0.5.0" }
+#bevy_transform = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", version = "0.5.0" }
+#bevy_utils = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", version = "0.5.0" }
+##bevy_window = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", version = "0.5.0" }
+#bevy_tasks = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", version = "0.5.0" }
+## bevy (optional)
+##bevy_audio = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", optional = true, version = "0.5.0" }
+##bevy_gltf = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", optional = true, version = "0.5.0" }
+##bevy_pbr = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", optional = true, version = "0.5.0" }
+##bevy_render = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", optional = true, version = "0.5.0" }
+##bevy_dynamic_plugin = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", optional = true, version = "0.5.0" }
+##bevy_sprite = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", optional = true, version = "0.5.0" }
+##bevy_text = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", optional = true, version = "0.5.0" }
+##bevy_ui = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", optional = true, version = "0.5.0" }
+##bevy_wgpu = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", optional = true, version = "0.5.0" }
+##bevy_winit = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", optional = true, version = "0.5.0" }
+##bevy_gilrs = { git = "https://github.com/bevyengine/bevy.git", rev = "997eae61854b362c10810884966ac605121e04d7", optional = true, version = "0.5.0" }
+

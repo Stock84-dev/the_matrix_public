@@ -1,0 +1,49 @@
+# cmake_minimum_required(VERSION <specify CMake version here>)
+project(the_matrix)
+
+set(CMAKE_CXX_STANDARD 14)
+include_directories(/tmp)
+
+add_executable(the_matrix
+        opencl/src/cl_src/benches/mock.cl.ignored
+        opencl/src/cl_src/benches/rsi1_coalesced.cl
+        opencl/src/cl_src/benches/rsi1_coalesced_branchless.cl
+        opencl/src/cl_src/benches/rsi1_indexed.cl
+        opencl/src/cl_src/benches/rsi1_indexed_coalesced_branchless.cl
+        opencl/src/cl_src/benches/rsi1_remove_if.cl
+        opencl/src/cl_src/benches/rsi1_remove_if_smaller.cl
+        opencl/src/cl_src/benches/rsi1_remove_if_smaller_account.cl
+        opencl/src/cl_src/benches/rsi1_remove_if_smaller_cache_coalesced.cl
+        opencl/src/cl_src/benches/rsi1_remove_if_smaller_indexed.cl
+        opencl/src/cl_src/benches/rsi1_remove_if_smaller_v2.cl
+        opencl/src/cl_src/benches/rsi1_remove_if_smaller_v2_smaller.cl
+        opencl/src/cl_src/benches/rsi1_remove_if_smaller_v2_smaller_account.cl
+        opencl/src/cl_src/benches/rsi1_remove_if_smaller_v2_smaller_coalesced.cl
+        opencl/src/cl_src/benches/rsi1_remove_if_smaller_v2_smaller_indexed.cl
+        opencl/src/cl_src/benches/rsi1_remove_if_smaller_v2_smaller_indexed_compute.cl
+        opencl/src/cl_src/benches/rsi1_remove_if_smaller_v2_smaller_indexed_compute_branchless.cl
+        opencl/src/cl_src/benches/rsi1_remove_if_smaller_v2_smaller_indexed_compute_branchless_parallel.cl
+        opencl/src/cl_src/benches/rsi1_remove_if_smaller_v2_smaller_indexed_compute_branchless_parallel_simd.cl
+        opencl/src/cl_src/benches/rsi1_remove_if_smaller_v2_smaller_indexed_compute_branchless_simd.cl
+        opencl/src/cl_src/benches/rsi1_remove_if_smaller_v2_smaller_indexed_compute_simd.cl
+        opencl/src/cl_src/benches/rsi1_remove_if_smaller_v2_smaller_indexed_compute_simd_branchless.cl
+        opencl/src/cl_src/benches/rsi1_remove_if_smaller_v2_smaller_indexed_compute_v2.cl
+        opencl/src/cl_src/benches/rsi1_remove_if_smaller_v2_smaller_indexed_per_cache.cl
+        opencl/src/cl_src/benches/rsi1_remove_if_smaller_v2_smaller_indexed_per_cache_looped.cl
+        opencl/src/cl_src/benches/rsi1_remove_if_smaller_v2_smaller_indexed_per_cache_sync.cl
+        opencl/src/cl_src/models/rsi.cl
+        opencl/src/cl_src/models/rsi05.cl
+        opencl/src/cl_src/models/rsi1.cl
+        opencl/src/cl_src/models/rsi.cl
+        opencl/src/cl_src/models/rsi_syntax.cl
+        opencl/src/cl_src/models/rsi2.cl
+        opencl/src/cl_src/models/tpro.cl
+        opencl/src/cl_src/account.cl
+        opencl/src/cl_src/cl.cl
+        opencl/src/cl_src/order.cl
+        opencl/src/cl_src/query.cl
+        opencl/src/cl_src/saccount.cl
+        opencl/src/cl_src/signal.cl
+        opencl/src/cl_src/trade_account.cl
+        opencl/src/cl_src/utils.cl
+        opencl/src/cl_src/variable.cl)

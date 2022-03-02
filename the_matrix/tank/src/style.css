@@ -1,0 +1,36 @@
+.render_target {
+    display: flex;
+    /* align-items: stretch; */
+    /* flex-flow: row wrap; */
+    width: 800px;
+    height: 600px;
+    background-color: gray;
+}
+.pc {
+    display: flex;
+    margin: 10px;
+    align-items: stretch;
+    width: 100%;
+    height: auto;
+    background-color: blue;
+}
+
+#first {
+    background-color: green;
+}
+
+.pc > :not(#first) {
+    background-color: pink;
+    margin-left: -50px;
+}
+
+.s {
+    border: 1px solid black;
+    background-color: red;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+* {
+    margin: 0px;
+}

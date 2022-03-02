@@ -1,0 +1,14 @@
+[package]
+name = "graph"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bevy = { path = "../bevy" }
+#merovingian = { path = "../merovingian" }
+mouse = { path = "../mouse" }
+futures-lite = "1.12.0"
+serde_yaml = "0.8.17"
+serde = "1.0.125"

@@ -1,0 +1,23 @@
+[package]
+name = "compression_demo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mouse = { path = "../mouse" }
+merovingian = { path = "../merovingian" }
+bevy = { path = "../bevy" }
+config = { path = "../config" }
+zigzag = "0.1.0"
+ieee754 = "0.2"
+bitvec = "0.22.3"
+zstd = "0.7.0"
+bytemuck = { version = "1.4", features = [ "derive" ] }
+tokio = { version = "1.11.0", features = ["full"] }
+dozer = { path = "../dozer" }
+huffman-compress = "0.6.1"
+arcode = "0.2.3"
+plotters = "0.3.1"
+ordered-float = { version = "2.1.1", features = ["serde"] }

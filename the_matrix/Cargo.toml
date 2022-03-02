@@ -1,0 +1,59 @@
+[workspace]
+resolver="2"
+members = [
+    #"the_architect",
+    "compression_demo",
+    "dozer",
+    "db",
+#    "cypher",
+    "config",
+    "opencl",
+    "residual_self_image",
+    "test_helper",
+#    "operator",
+    "morpheus",
+    "bevy",
+    "mouse",
+    "construct",
+    "matrix",
+    "merovingian",
+#    "nebuchadnezzar/apis/birake",
+    "nebuchadnezzar/apis/bitmex",
+    "nebuchadnezzar/nebuchadnezzar_core",
+    "nebuchadnezzar",
+#    "nebuchadnezzar/nebuchadnezzar_macros",
+    "matrix_core",
+#    "sync",
+    "iaas",
+    "graph",
+    "construct_core",
+    "tank",
+    "macros",
+    "zion",
+    "zion_macros",
+]
+exclude = [
+    ".idea",
+    ".vscode",
+    "_model_tests",
+    "bin",
+    "configs",
+    "release",
+    "rsi1",
+    "target",
+    "test_data",
+    "migrations",
+    # unfinished projects
+#    "cypher",
+#    "operator",
+#    "birake",
+]
+
+#default profile for all crates
+[profile.dev]
+#debug = 1
+#debug = 1 # store only line tables
+[profile.release]
+debug = true
+
+

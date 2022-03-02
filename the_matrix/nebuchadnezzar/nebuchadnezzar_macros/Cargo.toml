@@ -1,0 +1,17 @@
+[package]
+name = "nebuchadnezzar_macros"
+version = "0.1.0"
+authors = ["Stock84-dev <leontk8@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+proc-macro = true
+
+[dependencies]
+nebuchadnezzar_core = { path = "../nebuchadnezzar_core" }
+syn = "1.0"
+quote = "1.0.9"
+proc-macro2 = "1.0.24"
+field_names = "0.1.1"

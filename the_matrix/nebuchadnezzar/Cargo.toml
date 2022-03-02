@@ -1,0 +1,14 @@
+[package]
+name = "nebuchadnezzar"
+version = "0.1.0"
+authors = ["Stock84-dev <leontk8@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+nebuchadnezzar_core = { path = "nebuchadnezzar_core" }
+serde = { version = "1.0.125", features = ["derive"] }
+
+bitmex = { path = "apis/bitmex" }
+#birake = { path = "apis/birake" }

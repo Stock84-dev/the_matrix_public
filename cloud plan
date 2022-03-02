@@ -1,0 +1,39 @@
+azure
+gpu					block blob	data lake
+west us 2			0.001		0.001
+east us				0.002		0.001
+south central us	0.0024		0.002
+west europe			0.0018		0.0018
+
+deep archive: data mining
+cosmos db 5GB: model id, peer client ip
+5 GB outbound
+
+oracle
+vm(0.25 vcpu 1GB 50GB) 1: trading system
+vm(0.25 vcpu 1GB 50GB) 2:
+nosql db 25GB 1: model states 
+nosql db 25GB 2: exchange leverage and balance
+nosql db 25GB 3:
+data varehouse or data transactions db 20GB 1:
+data varehouse or data transactions db 20GB 2:
+10GB object storage:
+10GB archive storage:
+10 TB outbound
+
+aws
+dynamoDB 25GB:
+glacier 10GB:
+1 GB outbound
+
+gcp
+nosql db 1GB:
+vm(0.2 vCPU 0.6GB 30GB):
+5GB cloud storage:
+1GB outbound
+
+
+IBM cloud
+not for production, things get deleted if there is no action
+
+

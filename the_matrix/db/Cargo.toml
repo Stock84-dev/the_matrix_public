@@ -1,0 +1,16 @@
+[package]
+name = "db"
+version = "0.1.0"
+authors = ["Stock84-dev <leontk8@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mouse = { path = "../mouse" }
+#config = { path = "../config" }
+#macros = { path = "../macros" }
+sqlx = { version = "0.5.9", features = ["runtime-tokio-rustls", "mysql"] }
+#tokio = { version = "1.11.0", features = ["full"] }
+#url = "2.2.1"
+#chrono = "0.4.19"

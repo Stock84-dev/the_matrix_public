@@ -1,0 +1,38 @@
+[package]
+name = "zion"
+path = "src/zion.rs"
+version = "0.1.0"
+authors = ["Stock84-dev <leontk8@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+test = []
+
+[dependencies]
+mouse = { path = "../mouse" }
+merovingian = { path = "../merovingian" }
+db = { path = "../db" }
+zion_macros = { path = "../zion_macros" }
+bevy = { path = "../bevy" }
+uuid = { path = "../../deps/uuid", features = ["v4", "serde"] }
+serde = "1.0.125"
+tokio-tungstenite = { version = "0.14.0", features = ["rustls-tls"] }
+tokio = { version = "1.11.0", features = ["full"] }
+url = "2.2.1"
+futures-util = "0.3.14"
+clap = "3.0.0-beta.2"
+pin-project-lite = "0.2.6"
+tokio-rustls = "0.22.0"
+rkyv = { version = "0.7.28", features = ["validation"]}
+bytecheck = "0.6.5"
+cache-padded = "1.2.0"
+spin = "0.9.2"
+deepsize = "0.2.0"
+futures = "0.3.17"
+sqlx = { version = "0.5.9", features = ["runtime-tokio-rustls", "mysql"] }
+num_enum = "0.5.4"
+thiserror = "1.0.24"
+tracing = "0.1.12"
+tracing-subscriber = "0.3.9"

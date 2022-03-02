@@ -1,0 +1,16 @@
+[package]
+name = "test_helper"
+version = "0.1.0"
+authors = ["Stock84-dev <leontk8@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+merovingian = { path = "../merovingian" }
+opencl = { path = "../opencl" }
+fern = { version = "0.6.0", features = ["colored"] }
+log = "0.4.14"
+chrono = "0.4.19"
+lazy_static = "1.4.0"
+ocl = { path = "../../deps/ocl/ocl" }

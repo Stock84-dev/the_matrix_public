@@ -1,0 +1,40 @@
+2600 = 0.21766 Tflops 0.132
+6970m = 1.3056 Tflops
+
+timeframe increase by 60 increases computation by 280 sum += 60/i where i = [1, 60]
+workload is bigger by 280 * 100 = 28000
+device				comp per s	speedup	whole execution time	worst case bigger workload	average case	best case
+i5-3320m 			8.333 kcps	1		2880 min				56 000 days					2800  days		112   days
+i7-2600 			16.84 kcps	2.02	1425 min				27 722 days					1386  days		55.44 days
+threadripper 3990x 	257 kcps	30.85	93.35 min				1 815  days					90.75 days		3.63  days
+hd 6970m			147 kcps	17.65	163.17 min				3 172  days					158.6 days		6.344 days
+gtx 1060 3GB		624 kcps	74.9	38.45 min				747.66 days					37.38 days		1.495 days
+rtx 3090			1648 kcps	197.84	14.56 min				283.05 days					14.15 days		0.566 days
+8x tesla v100		8405 kcps	1008.9	2.85 min				55.51 days					2.77  days		0.111 days costs $7.344 per hour ($2.2715 on azure)
+
+speedups
+smaller data 2x
+coalasced acces 10x
+average case speedup = 20x
+
+vectorization + branchless = 25x
+knowing more about data
+fewer calculations per account (exclude max drawdown)
+removing jumps in loop
+
+branch version = 3330 ms
+branchless = 471 ms
+SIMD = 83 - 133 ms
+
+device				TFP32OPS	TF16OPS
+athlon ii x2 250	0.048		0
+i5-3320m			0.0832		0
+ryzen 5 1600		0.3456		0
+threadripper 3990 x	5.94		0
+gt 440				0.156		0
+gtx 1060			3.84		0.06 // 46x faster than i5-3320m
+rtx 3090			29.28		117.16
+tesla v100			15.14		242.2 // it is generally faster than 3090 because memory throughput is 638 times bigger
+
+instance 			TFP32OPS 	Running cost per TFP32OPS/month [$]
+gtx 1060 + r5 1600 		4.1856 		35.38

@@ -1,0 +1,24 @@
+[package]
+name = "sync"
+version = "0.2.0"
+authors = ["Stock84-dev <leontk8@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mouse = { path = "../mouse" }
+iaas = { path = "../iaas" }
+merovingian = { path = "../merovingian" }
+config = { path = "../config" }
+nebuchadnezzar = { path = "../nebuchadnezzar" }
+#residual_self_image = { path = "../residual_self_image" }
+tokio = { version = "1.11.0", features = ["full"] }
+clap = "3.0.0-beta.2"
+chrono = "0.4.19"
+async-compression = { version = "0.3.7", features = ["tokio", "lzma", "zstd"] }
+zstd = "0.7.0"
+cacache = "8.0.0"
+half = { version = "1.7.1", features = ["serde", "num-traits", "use-intrinsics"] }
+memmap2 = "0.3.1"
+rayon = "1.5.1"

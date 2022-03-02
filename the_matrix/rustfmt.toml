@@ -1,0 +1,10 @@
+# when doing cargo fix set imports_granularity to module then `cargo fix`
+imports_granularity="Module"
+# after cargo fix there will be blank lines where imports used to be, this removes them
+group_imports="StdExternalCrate"
+format_code_in_doc_comments=true
+wrap_comments=true
+comment_width=100
+format_strings=true
+condense_wildcard_suffixes=true
+normalize_comments=true

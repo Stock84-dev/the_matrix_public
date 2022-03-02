@@ -1,0 +1,26 @@
+[package]
+name = "dozer"
+version = "0.1.0"
+authors = ["Stock84-dev <leontk8@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mouse = { path = "../mouse" }
+merovingian = { path = "../merovingian" }
+config = { path = "../config" }
+db = { path = "../db" }
+nebuchadnezzar = { path = "../nebuchadnezzar" }
+bevy = { path = "../bevy" }
+speedy = { path = "../../deps/speedy" }
+tokio = { version = "1.11.0", features = ["full"] }
+async-trait = "0.1"
+thiserror = "1.0.24"
+futures-util = { version = "0.3.14", features = ["sink"] }
+async-compression = { version = "0.3.7", features = ["tokio", "lzma", "zstd"] }
+pin-project = "1.0.8"
+chrono = "0.4.19"
+memmap2 = "0.3.1"
+url = "2.2.1"
+ieee754 = "0.2"

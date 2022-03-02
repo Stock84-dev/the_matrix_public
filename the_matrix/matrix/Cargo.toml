@@ -1,0 +1,28 @@
+[package]
+name = "matrix"
+version = "0.1.1"
+authors = ["Stock84-dev <leontk8@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+default = []
+
+[dependencies]
+mouse = { path = "../mouse" }
+merovingian = { path = "../merovingian" }
+matrix_core = { path = "../matrix_core" }
+config = { path = "../config" }
+iaas = { path = "../iaas" }
+nebuchadnezzar = { path = "../nebuchadnezzar" }
+tokio = { version = "1.11.0", features = ["full"] }
+clap = "3.0.0-beta.2"
+async-compression = { version = "0.3.7", features = ["all-algorithms", "tokio-02"] }
+xz2 = { version = "0.1.6", features = ["tokio"] }
+futures-lite = "1.11.3"
+async-file-lock = "0.1.3"
+fs3 = "0.5.0"
+
+[dev-dependencies]
+test_helper = { path = "../test_helper" }

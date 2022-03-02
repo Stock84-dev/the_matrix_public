@@ -1,0 +1,19 @@
+# forked from
+# https://github.com/dovahcrow/bitmex-rs/commit/e09f2251082743a5f41a31ffb63df94f10869b3e
+[package]
+name = "bitmex"
+version = "0.1.0"
+authors = ["Stock84-dev <leontk8@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+converters = { path = "../../../../../converters" }
+nebuchadnezzar_core = { path = "../../nebuchadnezzar_core" }
+#nebuchadnezzar_macros = { path = "../../nebuchadnezzar_macros" }
+serde = { version = "1.0.125", features = ["derive"] }
+thiserror = "1.0.24"
+
+[dev-dependencies]
+dotenv = "0.15.0"
+env_logger = "0.8.3"
+

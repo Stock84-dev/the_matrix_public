@@ -1,0 +1,59 @@
+i5-3320m
+rsi_seek branches: true, 3.0849519 Mwi/s
+rsi_seek vector_width: 13, 4.6443563 Mwi/s
+rsi_seek lws: 2, 4.6443563 Mwi/s
+Seek speedup 15.261829x, 4.6443563 Mwi/s
+optimization took 127s
+n_candles = 15776
+0.6211774 Mcomb/s
+0.7709891 Mcomb/s
+0.91358423 Mcomb/s
+0.8634683 Mcomb/s
+0.8521161 Mcomb/s
+0.92088574 Mcomb/s
+0.8691258 Mcomb/s
+0.860608 Mcomb/s
+0.88214654 Mcomb/s
+0.83248216 Mcomb/s
+0.80728036 Mcomb/s
+0.82457733 Mcomb/s
+0.78529644 Mcomb/s
+0.7615532 Mcomb/s
+0.7712116 Mcomb/s
+0.7391518 Mcomb/s
+0.71791387 Mcomb/s
+0.7197749 Mcomb/s
+0.69451845 Mcomb/s
+0.67821777 Mcomb/s
+avg: 0.794304 Mcomb/s
+
+r5 1600
+rsi_seek vector_width: 4, 5.3395987 Mwi/s
+rsi_seek lws: 2, 5.4202714 Mwi/s
+rsi_seek branches: false, 5.4202714 Mwi/s
+rsi_seek vector_width: 7, 8.070343 Mwi/s
+rsi_seek lws: 2, 8.070343 Mwi/s
+Seek speedup 7.9559283x, 8.070343 Mwi/s
+optimization took 21s
+n_candles = 15776
+1.6865141 Mcomb/s
+1.6920412 Mcomb/s
+2.0301216 Mcomb/s
+1.9954749 Mcomb/s
+2.0317433 Mcomb/s
+2.1154032 Mcomb/s
+2.0407999 Mcomb/s
+1.9917934 Mcomb/s
+2.0627575 Mcomb/s
+1.9464877 Mcomb/s
+1.8610905 Mcomb/s
+1.85276 Mcomb/s
+1.7681396 Mcomb/s
+1.703502 Mcomb/s
+1.6768768 Mcomb/s
+1.6129996 Mcomb/s
+1.5493622 Mcomb/s
+1.5171065 Mcomb/s
+1.4675137 Mcomb/s
+1.4244558 Mcomb/s
+avg: 1.801347 Mcomb/s

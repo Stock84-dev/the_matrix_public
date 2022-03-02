@@ -1,0 +1,16 @@
+[package]
+name = "the_architect"
+version = "0.1.1"
+authors = ["Stock84-dev <leontk8@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mouse = { path = "../mouse" }
+merovingian = { path = "../merovingian" }
+config = { path = "../config" }
+semver = "0.11.0"
+clap = "3.0.0-beta.2"
+serde_yaml = "0.8.17"
+serde = { version = "1.0.125", features = ["derive"] }

@@ -1,0 +1,72 @@
+skip formatting this shit
+/*
+
+High level requirements:
+    - distributed persistent(optional) message streaming with exactly once semantics
+    - execution of services on nodes themselves (optional)
+    - endian agnostic
+Low level requirements:
+    Topic:
+        - Persistency: Persistent, Temporary
+        - Kind: Async, AsyncPersistent, Portal, PortalPersistent, Bevy, BevyPresistent
+        - AccessKind: LocalWorkflow, LocalNamespace, LocalNode, GlobalWorkflow, GlobalNamespace,
+          GlobalNode
+        - SpawnCondition: None, WorkflowSubmitted
+        - Lifetime: Static, Workflow
+        - Schema: None, field type definitions
+        - TimeSeriesCompression (requires persistentcy, and schema): No, Yes
+        - Compression: all algorithms and levels
+        - replication_factor (AccessKind must not be Local*): u64
+        - retention_ms: u64
+        - retention_bytes: u64
+        - retention_n_events: u64
+    State: stores only last event and shareable accross systems
+        - Persistency: Persistent, Temporary
+        - Kind: Async, AsyncPersistent, Portal, PortalPersistent, Bevy, BevyPresistent
+        - SpawnCondition: None, WorkflowSubmitted
+        - Lifetime: Static, Workflow
+        - Schema: None, field type definitions
+        - Compression: all algorithms and levels
+        - replication_factor (AccessKind must not be Local*): u64
+        // - Consistency: Eventual, Strong
+        - AccessKind: SystemPrivate(RunningSystemId), LocalWorkflow, LocalNamespace, LocalNode,
+          GlobalWorkflow, GlobalNamespace, GlobalNode
+    System:
+        - Kind: Bevy, Async
+        - Lifetime: Workflow
+        - DeterministicWithoutSideEffects: No, Yes
+        - input_topic_definitions
+        - output_topic_definitions
+        - input_state_definitions
+        - output_state_definitions
+        - args: Vec<u8>
+    Workflow:
+        - systems
+        - topics with lifetime of a workflow
+    Node:
+        Kind: Server, Edge
+        version
+Implementation:
+    Topic:
+        - Persistency
+            If temporary we keep in memory and do nothing.
+            We keep a journal every time event has been added.
+            When buffer needs to be flushed we ask each node about events in topic
+
+Node0              Reader1          Writer0         Node1                       Node2
+Reader1 -> PendingAdvance
+Writer0 -> PendingEventNode0(data, eid)
+Reader1 -> PendingAdvance
+PendingEventNode1(data, eid), PendingEventNode2(data, eid)
+Reader1 -> CommitAdvance
+Reader1StateUpdate
+Reader1Ack -> Node0 -> Node1 -> Node2
+if
+Reader1Ack -> Node0 -/> Node1 -> Node2
+
+
+
+
+
+
+ */
